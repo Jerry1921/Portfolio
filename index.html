@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jerry Jeriomio Joydhor — Software Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">JJJ</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#volunteering">Volunteering</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Switch theme">
+        <span class="theme-icon">◐</span>
+      </button>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Software Engineer</p>
+      <h1>Jerry Jeriomio<br/>Joydhor</h1>
+      <p class="hero-sub">BSc Computer Science · Full-Stack · Networks · Dhaka, Bangladesh</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="mailto:jerryjeriomio19@gmail.com" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <span class="mono-tag">&lt;dev /&gt;</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-inner">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+
+        <!-- PROFILE PICTURE FRAME -->
+        <div class="profile-frame-wrap">
+          <div class="profile-frame">
+            <img src="images/official pic jerry.jpg" alt="Jerry Jeriomio Joydhor" class="profile-img"
+                 onerror="this.closest('.profile-frame').classList.add('no-photo')" />
+            <span class="profile-placeholder">
+              <span class="profile-initials">JJJ</span>
+              <span class="profile-hint">profile.jpg</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="about-text">
+            <p>Computer Science graduate from Notre Dame University Bangladesh with hands-on experience in full-stack development, network administration, and cybersecurity. I build things that work — from AI health chatbots to pharmacy management systems.</p>
+            <p>Currently working as Assistant IT Officer at DND Tour & Travels while pursuing collaborative backend projects with Spring Boot and REST APIs.</p>
+          </div>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Location</span>
+              <span>Rampura, Dhaka</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Degree</span>
+              <span>BSc Computer Science</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Languages</span>
+              <span>Bengali (Native) · English (C1)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">LinkedIn</span>
+              <a href="https://linkedin.com/in/jerry-joydhor19" target="_blank">jerry-joydhor19</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-inner">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <!-- Company logo slot -->
+          <div class="timeline-logo-wrap">
+            <img src="dnd-logo.png" alt="DND Tour & Travels logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">DND</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Apr 2025 — Present</span>
+            <span class="timeline-company">DND Tour & Travels</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Assistant IT Officer</h3>
+            <p>IT support for hardware, software, network troubleshooting, system setup, maintenance, and issue resolution.</p>
+            <!-- Certificate download -->
+            <a href="dnd-certificate.pdf" download class="cert-download-btn" title="Download certificate">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-logo-wrap">
+            <img src="aci-logo.png" alt="ACI Limited logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">ACI</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Jan 2025 — Apr 2025</span>
+            <span class="timeline-company">ACI Limited, MIS Dept.</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Network Administrator Intern</h3>
+            <p>Firewall setup, VLAN segmentation, network maintenance, and cybersecurity risk identification.</p>
+            <a href="aci-certificate.pdf" download class="cert-download-btn" title="Download certificate">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="images/pharmaflow.png" alt="PharmaFlow preview" class="project-img"
+                 onerror="this.closest('.project-image-wrap').classList.add('no-img')" />
+            <span class="project-img-placeholder">PharmaFlow</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>PharmaFlow</h3>
+              <span class="project-tag">Collaborative · Ongoing</span>
+            </div>
+            <p>Pharmacy backend system built with Spring Boot, REST APIs, MySQL. Tested with Postman.</p>
+            <div class="project-stack">
+              <span>Spring Boot</span><span>REST API</span><span>MySQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Jerry1921/pharmacy-management-system" target="_blank" class="link-btn">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="images/ilera-mipic.png" alt="IleraMi preview" class="project-img"
+                 onerror="this.closest('.project-image-wrap').classList.add('no-img')" />
+            <span class="project-img-placeholder">IleraMi</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>IleraMi — AI Health Companion</h3>
+              <span class="project-tag">Self Project</span>
+            </div>
+            <p>Full-stack AI health chatbot using Google Gemini API, Express.js backend, REST API, and responsive design with secure API management.</p>
+            <div class="project-stack">
+              <span>Gemini API</span><span>Express.js</span><span>REST</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Jerry1921/ilera-mi" target="_blank" class="link-btn">GitHub →</a>
+              <a href="https://ilera-mi.vercel.app/" target="_blank" class="link-btn">Live →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="images/uComp.png" alt="UComp preview" class="project-img"
+                 onerror="this.closest('.project-image-wrap').classList.add('no-img')" />
+            <span class="project-img-placeholder">UComp</span>
+          </div>
+          <div class="project-info">
+            <div class="project-header">
+              <h3>UComp — Academic Event Platform</h3>
+              <span class="project-tag">Academic Project</span>
+            </div>
+            <p>Full-stack platform for academic workshops and competitions. Next.js, MongoDB, Clerk authentication, bKash integration, role-based access control.</p>
+            <div class="project-stack">
+              <span>Next.js</span><span>MongoDB</span><span>Clerk</span><span>bKash</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Jerry1921/UComp" target="_blank" class="link-btn">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-inner">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h4>Languages</h4>
+          <div class="skill-tags">
+            <span>Java</span><span>Python</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Backend</h4>
+          <div class="skill-tags">
+            <span>Spring Boot</span><span>Express.js</span><span>REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Frontend</h4>
+          <div class="skill-tags">
+            <span>Next.js</span><span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Databases</h4>
+          <div class="skill-tags">
+            <span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>DevOps & Tools</h4>
+          <div class="skill-tags">
+            <span>GitHub</span><span>Vercel</span><span>Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Data & Design</h4>
+          <div class="skill-tags">
+            <span>Numpy</span><span>Pandas</span><span>Matplotlib</span><span>Adobe Illustrator</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h4>Networking & Security</h4>
+          <div class="skill-tags">
+            <span>Firewall</span><span>VLAN</span><span>Cybersecurity</span><span>Threat Analysis</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VOLUNTEERING -->
+  <section id="volunteering">
+    <div class="section-inner">
+      <h2 class="section-title">Volunteering</h2>
+      <div class="timeline">
+
+        <div class="timeline-item">
+          <div class="timeline-logo-wrap">
+            <img src="stmarys-logo.png" alt="St. Mary's Cathedral Church logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">SM</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Aug 2017 — Present</span>
+            <span class="timeline-company">St. Mary's Cathedral Church, Ramna</span>
+          </div>
+          <div class="timeline-body">
+            <h3>President — St. Mary's Youth Organization</h3>
+            <p>Advanced through leadership roles up to President, leading youth programs, coordinating teams, events, and organizational communications.</p>
+            <a href="stmarys-certificate.pdf" download class="cert-download-btn">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-logo-wrap">
+            <img src="ndubcc-logo.png" alt="NDUBCC logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">NDB</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Feb 2022 — Nov 2025</span>
+            <span class="timeline-company">Notre Dame University Bangladesh</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Executive Committee Member — NDUBCC</h3>
+            <p>Actively participated in university club activities, assisting in event planning, coordination, execution, and student leadership development.</p>
+            <a href="ndubcc-certificate.pdf" download class="cert-download-btn">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-logo-wrap">
+            <img src="quantum-logo.png" alt="Quantum Foundation logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">QF</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Jun 2025 — Present</span>
+            <span class="timeline-company">Quantum Foundation</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Regular Blood Donor</h3>
+            <p>Contributed to humanitarian initiatives through regular blood donations at the Voluntary Blood Donation Program & Quantum Lab.</p>
+            <a href="quantum-certificate.pdf" download class="cert-download-btn">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-logo-wrap">
+            <img src="ndub-logo.png" alt="NDUB CSE Fest logo" class="timeline-logo"
+                 onerror="this.closest('.timeline-logo-wrap').classList.add('no-logo')" />
+            <span class="timeline-logo-placeholder">CSE</span>
+          </div>
+          <div class="timeline-meta">
+            <span class="timeline-date">Sep 2023</span>
+            <span class="timeline-company">Notre Dame University Bangladesh</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Event Organizer — NDUB CSE Fest</h3>
+            <p>Supported coordination, logistics, and on-ground execution of CSE Fest events.</p>
+            <a href="csefest-certificate.pdf" download class="cert-download-btn">
+              ↓ Download Certificate
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="section-inner">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="cert-list">
+        <li>
+          <span class="cert-name">Network Security | Cyber Security</span>
+          <span class="cert-org">StationX · Aug 2024</span>
+        </li>
+        <li>
+          <span class="cert-name">Introduction to Threat Landscape</span>
+          <span class="cert-org">Fortinet Training Institute · Nov 2024</span>
+        </li>
+        <li>
+          <span class="cert-name">Offline GPS Tracker System — Project Showcase</span>
+          <span class="cert-org">Notre Dame University Bangladesh · Sep 2024</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="contact-sub">Open to full-time roles, internships, and collaborations.</p>
+      <div class="contact-links">
+        <a href="mailto:jerryjeriomio19@gmail.com" class="contact-item">
+          <span class="contact-icon">✉</span>
+          jerryjeriomio19@gmail.com
+        </a>
+        <a href="tel:+8801568263879" class="contact-item">
+          <span class="contact-icon">✆</span>
+          (+880) 1568263879
+        </a>
+        <a href="https://linkedin.com/in/jerry-joydhor19" target="_blank" class="contact-item">
+          <span class="contact-icon">in</span>
+          jerry-joydhor19
+        </a>
+        <a href="https://github.com/Jerry1921" target="_blank" class="contact-item">
+          <span class="contact-icon">⌥</span>
+          Jerry1921
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span>Jerry Jeriomio Joydhor · 2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
