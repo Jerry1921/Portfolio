@@ -168,6 +168,7 @@ section { padding: var(--section-gap) 0; }
   min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between; 
   padding: 0 clamp(1.5rem, 5vw, 3rem);
   max-width: var(--max-w);
   margin: 0 auto;
@@ -236,13 +237,69 @@ h1 {
   text-decoration: none;
 }
 
-.hero-decoration {
+/* .hero-decoration {
   position: absolute;
   right: clamp(1.5rem, 5vw, 2rem);
   top: 50%;
   transform: translateY(-50%);
   opacity: 0.04;
   pointer-events: none;
+} */
+ .hero-decoration { display: none; }
+
+.hero-canvas-wrap {
+  flex-shrink: 0;
+  width: 300px;
+  height: 360px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  align-self: center;
+}
+
+#heroCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.canvas-hint {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding-bottom: 0.5rem;
+  opacity: 0;
+  animation: fade-in-hint 0.6s 2s forwards;
+}
+
+@keyframes fade-in-hint {
+  to { opacity: 1; }
+}
+
+.canvas-hint-text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.canvas-arrow {
+  color: var(--accent);
+  font-size: 14px;
+  animation: bounce-down 1.8s 2s ease-in-out infinite;
+}
+
+@keyframes bounce-down {
+  0%, 100% { transform: translateY(0); opacity: 0.5; }
+  50%       { transform: translateY(6px); opacity: 1; }
 }
 
 .mono-tag {

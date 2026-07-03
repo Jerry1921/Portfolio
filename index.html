@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 </head>
+
 <body>
 
   <!-- NAV -->
@@ -39,9 +40,16 @@
         <a href="mailto:jerryjeriomio19@gmail.com" class="btn btn-ghost">Get in Touch</a>
       </div>
     </div>
-    <div class="hero-decoration" aria-hidden="true">
+    <!-- <div class="hero-decoration" aria-hidden="true">
       <span class="mono-tag">&lt;dev /&gt;</span>
-    </div>
+    </div> -->
+    <div class="hero-canvas-wrap" aria-hidden="true">
+  <canvas id="heroCanvas"></canvas>
+  <div class="canvas-hint">
+    <span class="canvas-hint-text">scroll to explore</span>
+    <span class="canvas-arrow">↓</span>
+  </div>
+</div>
   </section>
 
   <!-- ABOUT -->
@@ -413,5 +421,6 @@
   </footer>
 
   <script src="script.js"></script>
+  <script src="hero-animation.js"></script>
 </body>
 </html>
